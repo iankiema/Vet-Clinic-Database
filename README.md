@@ -33,7 +33,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 # 📖 [Vet Clinic Database] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
 **[Vet clinic database]**  is designed to manage information about animals at a veterinary clinic. It includes details such as the animal's name, date of birth, neutered status, escape attempts, and weight.
 
@@ -63,7 +62,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+
 
 To get a local copy up and running, follow these steps.
 
@@ -82,7 +81,7 @@ git clone https://github.com/yourusername/vet-clinic-database.git
 
 
 ```
---->
+
 
 ### Usage
 
@@ -97,7 +96,6 @@ To run the project, execute the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Ian Kiema**
 
@@ -125,7 +123,7 @@ Contributions, issues, and feature requests are welcome!
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
+
 
 If you like this project, consider giving it a star.
 
