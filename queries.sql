@@ -28,19 +28,24 @@ select * from animals where weight_kg between 10.4 and 17.3;
 /* Transactions 1: Set species to 'unspecified' and Rollback*/
 begin;
 update animals set species = 'unspecified';
-
+select species from animals;
 rollback;
+select species from animals;
 
 /*Transaction 2: Set species based on name and commit*/
 begin;
 update animals set species = 'digimon' where animal_name like '%mon';
 update animals set species = 'pokemon' where species is null;
+select species from animals;
 commit;
+select species from animals;
 
 /*Transaction 3: Delete and Rollback*/
 begin;
+select count(*) from animals;
 delete from animals;
 rollback;
+select count(*) from animals;
 
 /* Transaction 4: Update weight  and Rollback to Savepoint*/
 
