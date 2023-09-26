@@ -1,7 +1,7 @@
 /* Database schema to keep the structure of entire database. */
 
 CREATE TABLE animals (
-    'id' int,
+    'id' int primary key,
     'name' varchar,
     'date_of_birth' date,
     'escape_attempts' int,
