@@ -183,18 +183,12 @@ order by v.visit_date asc
 limit 1;
 
 /*Details for the most recent visit: animal information, vet information, and date of visit*/
-select s.species_name as recommended_speciality
-from(
-    select an.species_id, count(*) as visit_count
-    from visits v
-    inner join animals an on v.animal_id = an.animal_id
-	inner join vets vt on v.vet_id = vt.vet_id
-	where vt.vet_name = 'Maisy Smith'
-	group by an.species_id
-	order by visit_count desc
-	limit 1
-) most_visited_species
-join species s on most_visited_species.species_id = s.species_id;
+select a.animal_name,vt.vet_name as vet_name, v.visit_date
+from visits v
+inner join animals a on v.animal_id = a.animal_id
+inner join vets vt on v.vet_id = vt.vet_id
+order by v.visit_date desc
+limit 1;
 
 /*Visits that were with a vet who did not specialize in that animal's species*/
 select count(*)
